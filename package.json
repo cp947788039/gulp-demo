@@ -4,7 +4,7 @@
   "description": "create gulp project",
   "main": "gulpfile.js",
   "scripts": {
-    "dev": "node gulpfile.js"
+    "dev": "gulp"
   },
   "author": "cp",
   "license": "ISC",
@@ -23,7 +23,6 @@
     "gulp-minify-html": "^1.0.6",
     "gulp-rename": "^1.4.0",
     "gulp-uglify": "^3.0.2",
-    "imagemin-pngquant": "^7.0.0",
     "jshint": "^2.10.2"
   }
 }
