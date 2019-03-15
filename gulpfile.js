@@ -7,7 +7,6 @@ const minifyCss = require("gulp-minify-css");
 const minifyHtml = require("gulp-minify-html");
 const jshint = require("gulp-jshint");
 const imagemin = require('gulp-imagemin');
-const pngquant = require('imagemin-pngquant');
 const connect = require('gulp-connect');
 const clean = require('gulp-clean');
 
@@ -56,7 +55,6 @@ gulp.task('taskJs',function(){
 gulp.task('taskImage',function(){
     return gulp.src('src/images/*')
     .pipe(imagemin())
-    .pipe(pngquant())
     .pipe(gulp.dest('dist/images'))
     .pipe(connect.reload());
 })
